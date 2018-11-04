@@ -1,0 +1,35 @@
+{
+    "extends": [
+      "eslint:recommended",
+      "plugin:require-path-exists/recommended"
+    ],
+    "env": {
+      "browser": true,
+      "commonjs": true,
+      "node": true,
+      "es6": true
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "jsx": true,
+      "modules": true,
+      "arrowFunctions": true,
+      "classes":true
+},
+    "rules": {
+      "no-console": "warn",
+      "strict": ["error", "global"],
+      "curly": "warn",
+      "no-undef": "error",
+      "no-unused-vars": "off",
+      "no-extra-boolean-cast":"off",
+      "no-unreachable": "warn"
+    },
+    "globals": {
+      "$": true
+    },
+    "plugins": [
+        "require-path-exists"
+      ]    
+}

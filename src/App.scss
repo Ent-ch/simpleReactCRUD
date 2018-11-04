@@ -1,0 +1,29 @@
+@import '../node_modules/@blueprintjs/core/src/common/colors.scss';
+
+$cBlockWidth: 130px;
+
+html, body {
+    height: 100%;
+}
+
+#app {
+    width: 100%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color:$blue1;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.detail-page {
+    height: 100%;
+
+    footer {
+        position: sticky;
+    }
+}
