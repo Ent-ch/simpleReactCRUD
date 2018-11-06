@@ -5,10 +5,12 @@
   "dependencies": {
     "@blueprintjs/core": "^3.8.0",
     "axios": "^0.18.0",
+    "history": "^4.7.2",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-redux": "^5.1.0",
     "react-router-dom": "^4.3.1",
+    "react-router-redux": "^4.0.8",
     "redux": "^4.0.1"
   },
   "devDependencies": {
@@ -37,6 +39,7 @@
     "test": "eslint src --ext jsx,js",
     "build": "webpack --mode production",
     "watch": "webpack --mode development --watch",
+    "start:proxy": "start /min http-server ./docs -o -s --cors -c-1 --proxy https://gentle-escarpment-19443.herokuapp.com && npm run watch",
     "start:ui": "start /min http-server ./docs -o -s --cors -c-1 && npm run watch",
     "start:dev": "webpack-dev-server"
   },
